@@ -12,7 +12,7 @@ export class NasaPics implements INodeType {
   description: INodeTypeDescription = {
     // Basic node details will go here
     displayName: 'NASA Pics',
-    name: 'NasaPics',
+    name: 'nasaPics',
     icon: 'file:nasapics.svg',
     group: ['transform'],
     version: 1,
@@ -50,7 +50,7 @@ export class NasaPics implements INodeType {
             value: 'astronomyPictureOfTheDay',
           },
           {
-            name: 'Mars Rover Photos',
+            name: 'Mars Rover Photo',
             value: 'marsRoverPhotos',
           },
         ],
@@ -100,7 +100,7 @@ export class NasaPics implements INodeType {
           {
             name: 'Get',
             value: 'get',
-            action: 'Get Mars Rover photos',
+            action: 'Get mars rover photos',
             description: 'Get photos from the Mars Rover',
             routing: {
               request: {
@@ -113,7 +113,7 @@ export class NasaPics implements INodeType {
       },
 
       {
-        displayName: 'Rover name',
+        displayName: 'Rover Name',
         description: 'Choose which Mars Rover to get a photo from',
         required: true,
         name: 'roverName',

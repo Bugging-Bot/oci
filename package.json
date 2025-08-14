@@ -38,10 +38,10 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/NasaPicsApi.credentials.ts"
+      "./dist/credentials/NasaPicsApi.credentials.ts"
     ],
     "nodes": [
-      "dist/nodes/NasaPics/NasaPics.node.ts"
+      "./dist/nodes/NasaPics/NasaPics.node.ts"
     ]
   },
   "devDependencies": {
