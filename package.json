@@ -1,19 +1,24 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-nasa-pics",
   "version": "0.1.0",
-  "description": "",
+  "description": "n8n custom node to call NASA's APOD and Mars Rover Photo services.",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n-community-node-package",
+    "n8n-nodes",
+    "nasa",
+    "apod",
+    "mars",
+    "rover"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/Bugging-Bot/oci",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Chandresh Olaniya",
+    "email": "chandresh.olaniya@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/Bugging-Bot/oci.git"
   },
   "engines": {
     "node": ">=20.15"
@@ -33,12 +38,10 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/NasaPicsApi.credentials.ts"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/NasaPics/NasaPics.node.ts"
     ]
   },
   "devDependencies": {
@@ -52,4 +55,5 @@
   "peerDependencies": {
     "n8n-workflow": "*"
   }
+
 }
